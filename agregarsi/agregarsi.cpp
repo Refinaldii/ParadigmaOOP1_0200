@@ -1,10 +1,20 @@
-
-
 #include <iostream>
+#include <vector>
+using namespace std;
+
+#include "anak.h"
+#include "ibu.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    ibu* varIbu = new ibu("dini");
+    ibu* varIbu = new ibu("novi");
+    anak* varAnak1 = new anak("tono");
+    anak* varAnak2 = new anak("rini");
+    anak* varAnak3 = new anak("Dewi");
+
+    varIbu->tambahAnak(varAnak1);
+    varIbu->tambahAnak(varAnak2);
 }
 
 
